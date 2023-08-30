@@ -1,0 +1,49 @@
+/* Default styles for larger screens */
+.login-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-screen__form {
+  width: 580px;
+  padding: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 15px;
+}
+
+.login-screen__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-screen__forgotpassword {
+  font-size: 0.7rem;
+}
+
+.login-screen__subtext {
+  font-size: 0.7rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .login-screen__form {
+    width: 90%; /* Adjust the width as needed */
+    padding: 1rem; /* Adjust padding as needed */
+    border-radius: 10px; /* Adjust border-radius as needed */
+  }
+
+  .login-screen__title {
+    font-size: 1.2rem; /* Adjust font size as needed */
+  }
+
+  .login-screen__forgotpassword,
+  .login-screen__subtext {
+    font-size: 0.6rem; /* Adjust font size as needed */
+  }
+}
